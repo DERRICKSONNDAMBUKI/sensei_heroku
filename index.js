@@ -1,8 +1,7 @@
 const express = require('express')
-const res = require('express/lib/response')
 const app = express()
 
-app.get('/', async ()=>{
+app.get('/', async (req,res)=>{
     res.send('Sensei heroku app')
 })
 
